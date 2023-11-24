@@ -150,7 +150,7 @@ function(t) {
 		type = '',
 		jackets = {}, cards, ping_auth, manifest, menu_list = [],
 		vip = true,
-		leftVipD = ' 💎 24 дня',
+		leftVipD = ' 💎 900 дней 🧐',
 		user_id = 86324,
 		uid = '72ba41c6eee8f7862b7c57cbc956fe2f_86324',
 		IP, logged = true;

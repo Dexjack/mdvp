@@ -2535,7 +2535,7 @@ function(t) {
 			if (Lampa.Storage.get('pro_pub', false)) query.push('ptoken=' + Pub.token);
 			if (Filmix.token) query.push('token=' + Filmix.token);
 			query.push('cub_id=YXJ0ZW1jaHVwaW40MkBnbWFpbC5jb20=');
-			query.push('uid=72ba41c6eee8f7862b7c57cbc956fe2f_86324');
+			//query.push('uid=72ba41c6eee8f7862b7c57cbc956fe2f_86324');
 			if (cards) {
 				var notices = Lampa.Storage.get('account_notice', []).filter(function(n) {
 					return n.card_id == cards.id;

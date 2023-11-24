@@ -7923,7 +7923,7 @@ function(t) {
 					type: 'title'
 				},
 				field: {
-					name: '🆔 86324 🔹  📱 🤖 Android 13 (RMX3242)'
+					name: '🆔 NON 🔹  📱 🤖 NON'
 				}
 			});
 			Lampa.SettingsApi.addParam({

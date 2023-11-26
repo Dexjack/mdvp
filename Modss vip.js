@@ -153,7 +153,7 @@ function(t) {
 		leftVipD = '9000 days',
 		user_id = '88888888',
 		uid = '72ba41c6eee8f7862b7c57cbc956fe2f',
-		IP, logged = false;
+		IP, logged = true;
 	console.log('App', 'protocol:', Protocol());
 
 	var Modss = {

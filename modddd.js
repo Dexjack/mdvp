@@ -146,12 +146,12 @@ function(t) {
 	}
 	var TRASH_R = ['$$$####!!!!!!!', '^^^^^^##@', '@!^^!@#@@$$$$$', '^^#@@!!@#!$', '@#!@@@##$$@@'];
 	var version_modss = '3.0',
-		//API = Protocol() + 'api.lampa.stream/',
+		API = Protocol() + 'api.lampa.stream/',
 		type = '',
 		jackets = {}, cards, ping_auth, manifest, menu_list = [],
 		vip = true,
-		leftVipD = ' 💎 900 дней 🧐',
-		user_id = 86324,
+		leftVipD = ' 💎 900 дня',
+		user_id = 90000,
 		uid = '72ba41c6eee8f7862b7c57cbc956fe2f_86324',
 		IP, logged = true;
 	console.log('App', 'protocol:', Protocol());
@@ -2535,7 +2535,7 @@ function(t) {
 			if (Lampa.Storage.get('pro_pub', false)) query.push('ptoken=' + Pub.token);
 			if (Filmix.token) query.push('token=' + Filmix.token);
 			query.push('cub_id=YXJ0ZW1jaHVwaW40MkBnbWFpbC5jb20=');
-			//query.push('uid=72ba41c6eee8f7862b7c57cbc956fe2f_86324');
+			query.push('uid=72ba41c6eee8f7862b7c57cbc956fe2f_86324');
 			if (cards) {
 				var notices = Lampa.Storage.get('account_notice', []).filter(function(n) {
 					return n.card_id == cards.id;
@@ -7901,7 +7901,7 @@ function(t) {
 			}, 3000);
 			Lampa.SettingsApi.addComponent({
 				component: 'settings_modss',
-				name: "MODS's 🧐",
+				name: "MODS's 💎",
 				icon: "<svg viewBox='0 0 24 24' xml:space='preserve' xmlns='https://www.w3.org/2000/svg'><path d='M19.7.5H4.3C2.2.5.5 2.2.5 4.3v15.4c0 2.1 1.7 3.8 3.8 3.8h15.4c2.1 0 3.8-1.7 3.8-3.8V4.3c0-2.1-1.7-3.8-3.8-3.8zm-2.1 16.4c.3 0 .5.2.5.5s-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1V8.4l-3.2 5.4-.1.1-.1.1h-.6s-.1 0-.1-.1l-.1-.1-3-5.4v8.5h1c.3 0 .5.2.5.5s-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1V7.1h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1.7c.1 0 .2.1.2.2l3.7 6.2 3.7-6.2.2-.2h1.7c.3 0 .5.2.5.5s-.2.5-.5.5h-1v9.8h1z' fill='#ffffff' class='fill-000000'></path></svg>"
 			});
 			Lampa.SettingsApi.addParam({
@@ -7911,8 +7911,8 @@ function(t) {
 					type: 'title'
 				},
 				field: {
-					name: '<div class="settings-folder" style="padding:0!important"><div style="width:3em;height:2.3em;margin-top:-.5em;padding-right:.5em"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8 5.5v7h2v-7h-2zm-.285 0H8.601l-1.497 4.113L5.607 8.5H3.493l2.611 6.964h2L10.715 8.5zm5.285 5h1.5a2.5 2.5 0 1 0 0-5H14v7h2v-2zm0-2v-1h1.5a.5.5 0 1 1 0 1H16z" fill="#ffffff" class="fill-000000"></path></svg></div><div style="font-size:1.3em">Осталось: <span style="color:#ffda00">900</span> дней</div></div>',
-					
+					name: '<div class="settings-folder" style="padding:0!important"><div style="width:3em;height:2.3em;margin-top:-.5em;padding-right:.5em"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8 5.5v7h2v-7h-2zm-.285 0H8.601l-1.497 4.113L5.607 8.5H3.493l2.611 6.964h2L10.715 8.5zm5.285 5h1.5a2.5 2.5 0 1 0 0-5H14v7h2v-2zm0-2v-1h1.5a.5.5 0 1 1 0 1H16z" fill="#ffffff" class="fill-000000"></path></svg></div><div style="font-size:1.3em">Осталось: <span style="color:#ffda00">24</span> дня</div></div>',
+					description: 'Для активации <b style="color: #ffd402;">Vip</b> статуса перейдите в телеграм бот <span style="color: #24b4f9;">@modssmy_bot</span><br>По вопросам <span style="color: #24b4f9;">@modss_group</span>'
 				}
 			});
 
@@ -7923,7 +7923,7 @@ function(t) {
 					type: 'title'
 				},
 				field: {
-					name: '🆔 NON 🔹  📱 🤖 NON'
+					name: '🆔 86324 🔹  📱 🤖 Android 13 (RMX3242)'
 				}
 			});
 			Lampa.SettingsApi.addParam({

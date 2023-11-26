@@ -146,11 +146,11 @@ function(t) {
 	}
 	var TRASH_R = ['$$$####!!!!!!!', '^^^^^^##@', '@!^^!@#@@$$$$$', '^^#@@!!@#!$', '@#!@@@##$$@@'];
 	var version_modss = '3.0',
-		API = Protocol() + 'api.lampa.stream/',
+		//API = Protocol() + 'api.lampa.stream/',
 		type = '',
 		jackets = {}, cards, ping_auth, manifest, menu_list = [],
 		vip = true,
-		leftVipD = '9000',
+		leftVipD = '9000 days',
 		user_id = '88888888',
 		uid = '72ba41c6eee8f7862b7c57cbc956fe2f',
 		IP, logged = false;

@@ -146,9 +146,7 @@ function(t) {
 	}
 	var TRASH_R = ['$$$####!!!!!!!', '^^^^^^##@', '@!^^!@#@@$$$$$', '^^#@@!!@#!$', '@#!@@@##$$@@'];
 	var version_modss = '3.0',
-		API = Protocol() + 'https://dexjack.github.io/apiot/',
-		type = '',
-		jackets = {}, cards, ping_auth, manifest, menu_list = [],
+		API = Protocol(), 
 		vip = true,
 		leftVipD = '9000 days',
 		user_id = '88888888',

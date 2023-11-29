@@ -612,32 +612,7 @@ function(t) {
    					console.log('logged:', logged);
 					}
 					setTimeout(function() {
-    // Создаем модальное окно
-    var modal = document.createElement('div');
-    modal.id = 'myModal';
-    modal.className = 'modal';
-
-    // Создаем контент модального окна
-    var content = document.createElement('div');
-    content.className = 'modal-content';
-
-    // Добавляем данные в контент
-    content.innerHTML = `
-        <p>card.kinopoisk_id: ${card.kinopoisk_id}</p>
-        <p>kp: ${kp}</p>
-        <p>imdb: ${imdb}</p>
-        <p>auth: ${auth}</p>
-        <p>vip: ${vip}</p>
-        <p>leftVipD: ${leftVipD}</p>
-        <p>logged: ${logged}</p>
-    `;
-
-    // Добавляем контент в модальное окно
-    modal.appendChild(content);
-
-    // Добавляем модальное окно на страницу
-    document.body.appendChild(modal);
-}, 10000);
+    // Создаем модальное окно;
 					var kp_rating = !isNaN(kp) && kp !== null ? parseFloat(kp).toFixed(1) : '0.0';
 					var imdb_rating = !isNaN(imdb) && imdb !== null ? parseFloat(imdb).toFixed(1) : '0.0';
 					if (['filmix', 'pub'].indexOf(card.source) == -1 && Lampa.Storage.field('mods_rating')) {

@@ -603,6 +603,13 @@ function(t) {
 					if (logged !== auth) {
 						logged = auth;
 						window.location.reload();
+					console.log('card.kinopoisk_id:', card.kinopoisk_id);
+   					console.log('kp:', kp);
+  					console.log('imdb:', imdb);
+  					console.log('auth:', auth);
+  					console.log('vip:', vip);
+   					console.log('leftVipD:', leftVipD);
+   					console.log('logged:', logged);
 					}
 					var kp_rating = !isNaN(kp) && kp !== null ? parseFloat(kp).toFixed(1) : '0.0';
 					var imdb_rating = !isNaN(imdb) && imdb !== null ? parseFloat(imdb).toFixed(1) : '0.0';

@@ -150,8 +150,8 @@ function(t) {
 		type = '',
 		jackets = {}, cards, ping_auth, manifest, menu_list = [],
 		vip = true,
-		leftVipD = ' 💎 900 дня',
-		user_id = 90000,
+		leftVipD = ' 💎 900 дней',
+		user_id = 86324,
 		uid = '72ba41c6eee8f7862b7c57cbc956fe2f_86324',
 		IP, logged = true;
 	console.log('App', 'protocol:', Protocol());
@@ -299,7 +299,7 @@ function(t) {
 			Lampa.Modal.render().find('.cub-premium__title').text("MODS's VIP");
 			Lampa.Modal.render().find('.cub-premium__descr:eq(0)').text('Поздравляем вас с получением VIP-статуса! Теперь у вас есть возможность наслаждаться видео в высоком разрешении 4К. Кроме того, вас ожидают дополнительные балансеры, которые помогут найти подходящий контент');
 			Lampa.Modal.render().find('.cub-premium__descr:eq(1)').text('У вас осталось ' + leftVipD);
-			Lampa.Modal.render().find('.cub-premium__descr:eq(1)').after('👇 Кнопка для просмотра 👇<br><br><img src="http://lampa.stream/but_modss.jpg">');
+			Lampa.Modal.render().find('.cub-premium__descr:eq(1)').after('👇 Кнопка для просмотра 👇<br><br><img src="https://lampa.stream/but_modss.jpg">');
 			Lampa.Modal.render().find('.cub-premium__url').text('@modssmy_bot');
 			Lampa.Modal.render().addClass('modal--cub-premium').find('.modal__content').before('<div class="modal__icon"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 32 32"><path d="m2.837 20.977q-.912-5.931-1.825-11.862a.99.99 0 0 1 1.572-.942l5.686 4.264a1.358 1.358 0 0 0 1.945-.333l4.734-7.104a1.263 1.263 0 0 1 2.1 0l4.734 7.1a1.358 1.358 0 0 0 1.945.333l5.686-4.264a.99.99 0 0 1 1.572.942q-.913 5.931-1.825 11.862z" fill="#D8C39A"></svg></div>');
 		},
@@ -393,29 +393,29 @@ function(t) {
 				});
 			}
 		},
-		preload: function(e) {
-			var _this = this;
-			var ico = '<svg class="modss-online-icon" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32"><path d="m17 14.5 4.2-4.5L4.9 1.2c-.1-.1-.3-.1-.6-.2L17 14.5zM23 21l5.9-3.2c.7-.4 1.1-1 1.1-1.8s-.4-1.5-1.1-1.8L23 11l-4.7 5 4.7 5zM2.4 1.9c-.3.3-.4.7-.4 1.1v26c0 .4.1.8.4 1.2L15.6 16 2.4 1.9zM17 17.5 4.3 31c.2 0 .4-.1.6-.2L21.2 22 17 17.5z" fill="currentColor" fill="#ffffff" class="fill-000000"></path></svg>';
-			var loader = '<svg class="modss-balanser-loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="94px" height="94px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="5" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>';
-			var timer = new Modss.Timer('.view--modss_online span');
-			Lampa.Activity.active().activity.render().find('.view--modss_online').html(loader + '<span>Загрузка</span>');
-			timer.start();
-			var load = new component(Modss.params);
-			load.createSource(true).then(function(ok) {
-				timer.stop();
-				console.log("Loader is", ok);
-				Lampa.Activity.active().activity.render().find('.view--modss_online').html(Lampa.Lang.translate(ico + '<span>' + _this.title + '</span>'));
-			}).
-			catch (function(e) {
-				_this.btn.unbind('hover:enter hover.click').on('hover:enter hover.click', function() {
-					Lampa.Noty.show(e && (e.error ? 'Ошибка: ' + e.error : 'Ничего не найдено'));
-				});
-				Lampa.Noty.show(e && (e.error ? 'Ошибка: ' + e.error : 'Ничего не найдено'));
-				Lampa.Activity.active().activity.render().find('.view--modss_online').css('opacity', '0.3').html(Lampa.Lang.translate(ico + '<span>' + _this.title + '</span>'));
-				timer.stop();
-				console.log('Loader is', e);
-			});
-		},
+		// preload: function(e) {
+		// 	var _this = this;
+		// 	var ico = '<svg class="modss-online-icon" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32"><path d="m17 14.5 4.2-4.5L4.9 1.2c-.1-.1-.3-.1-.6-.2L17 14.5zM23 21l5.9-3.2c.7-.4 1.1-1 1.1-1.8s-.4-1.5-1.1-1.8L23 11l-4.7 5 4.7 5zM2.4 1.9c-.3.3-.4.7-.4 1.1v26c0 .4.1.8.4 1.2L15.6 16 2.4 1.9zM17 17.5 4.3 31c.2 0 .4-.1.6-.2L21.2 22 17 17.5z" fill="currentColor" fill="#ffffff" class="fill-000000"></path></svg>';
+		// 	var loader = '<svg class="modss-balanser-loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="94px" height="94px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="5" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>';
+		// 	var timer = new Modss.Timer('.view--modss_online span');
+		// 	Lampa.Activity.active().activity.render().find('.view--modss_online').html(loader + '<span>Загрузка</span>');
+		// 	timer.start();
+		// 	var load = new component(Modss.params);
+		// 	load.createSource(true).then(function(ok) {
+		// 		timer.stop();
+		// 		console.log("Loader is", ok);
+		// 		Lampa.Activity.active().activity.render().find('.view--modss_online').html(Lampa.Lang.translate(ico + '<span>' + _this.title + '</span>'));
+		// 	}).
+		// 	catch (function(e) {
+		// 		_this.btn.unbind('hover:enter hover.click').on('hover:enter hover.click', function() {
+		// 			Lampa.Noty.show(e && (e.error ? 'Ошибка: ' + e.error : 'Ничего не найдено'));
+		// 		});
+		// 		Lampa.Noty.show(e && (e.error ? 'Ошибка: ' + e.error : 'Ничего не найдено'));
+		// 		Lampa.Activity.active().activity.render().find('.view--modss_online').css('opacity', '0.3').html(Lampa.Lang.translate(ico + '<span>' + _this.title + '</span>'));
+		// 		timer.stop();
+		// 		console.log('Loader is', e);
+		// 	});
+		// },
 
 		collections: function() {
 			var menu_item = $('<li class="menu__item selector" data-action="collection"><div class="menu__ico"><img src="./img/icons/menu/catalog.svg"/></div><div class="menu__text">' + Lampa.Lang.translate('title_collections') + '</div></li>');
@@ -1559,8 +1559,7 @@ function(t) {
 	function rezka(component, _object) {
 		var network = new Lampa.Reguest();
 		var extract = {};
-		var prox = /*Protocol() +'prox.lampa.stream/';*/
-		'https://cors.lampa.stream/' + (IP ? 'ip' + IP + '/' : '');
+		var prox = Protocol() + 'prox.lampa.stream/'; //'https://cors.lampa.stream/' + (IP ? 'ip' + IP + '/' : '');
 		var embed = prox + 'http://voidboost.tv/';
 		var object = _object;
 		var select_id = '';
@@ -1978,6 +1977,7 @@ function(t) {
 		var wait_similars;
 		var prefer_old = false;
 		var choice = component.getChoice('cdnmovies');
+		var host = 'https://cdnmovies.net';
 		var old_embed = 'https://1f29036bcf55d.sarnage.cc/';
 		var new_embed = 'https://cdnmovies-stream.online/';
 
@@ -2006,35 +2006,16 @@ function(t) {
 				try {
 					network.clear();
 					network.timeout(10000);
-					network.silent(embed + api, call_success, call_error, false, {
-						dataType: 'text'
+					network["native"](embed + api, call_success, call_error, false, {
+						dataType: 'text',
+						headers: Lampa.Platform.is('android') ? {
+							'Origin': host,
+							'Referer': host + '/'
+						} : {}
 					});
 				} finally {
 					meta.attr('content', referrer);
 				}
-			}
-		}
-
-
-		function cdn_api_search2(api, callback, error) {
-			var meta = $('head meta[name="referrer"]');
-			var referrer = meta.attr('content') || 'never';
-			meta.attr('content', 'origin');
-
-			try {
-				network.clear();
-				network.timeout(10000);
-				network.silent(embed + api, function(str) {
-					if (callback) callback(str || '');
-				}, function(a, c) {
-					if (a.status == 404 && a.responseText && (a.responseText.indexOf('<title>Not Found</title>') !== -1 || a.responseText.indexOf('Не найдено!') !== -1 || a.responseText.indexOf('Контент не найден или недоступен в вашем регионе!') !== -1) || a.status == 0 && a.statusText !== 'timeout') {
-						if (callback) callback('');
-					} else if (error || a.status == 521) error(network.errorDecode(a, c));
-				}, false, {
-					dataType: 'text'
-				});
-			} finally {
-				meta.attr('content', referrer);
 			}
 		}
 		this.searchs = function(_object, kinopoisk_id) {
@@ -2087,14 +2068,27 @@ function(t) {
 
 		function parse(str, empty) {
 			str = str.replace(/\n/g, '');
-			var find = str.match("Playerjs\\({.*?\\bfile:\\s*'([^']*)'");
-			var video = find && decode(find[1]);
-			var json;
-			try {
-				json = video && JSON.parse(video);
-			} catch (e) {}
-			if (json) {
-				extract = json;
+			var video;
+			var app = str.match(/(<div id="app" data-page=[^>]*>)/);
+
+			if (app) {
+				var page = $(app[1] + '</div>').attr('data-page') || '';
+				var json;
+
+				try {
+					json = page && JSON.parse(page);
+				} catch (e) {}
+
+				var player = json && json.props && json.props.player && decode(json.props.player);
+
+				try {
+					video = player && JSON.parse(player);
+				} catch (e) {}
+			}
+
+			if (video) {
+				component.loading(false);
+				extract = video;
 				filter();
 				append(filtred());
 			} else empty();
@@ -2937,7 +2931,7 @@ function(t) {
 							} else {
 								Lampa.Noty.show(Lampa.Lang.translate('modss_nolink'));
 							}
-						} else Lampa.Noty.show(json.vip ? json.vip.title + '<br>' + json.vip.msg : Lampa.Lang.translate('modss_nolink'));
+						} else Lampa.Noty.show(json && json.vip ? json.vip.title + '<br>' + json.vip.msg : Lampa.Lang.translate('modss_nolink'));
 					}, true);
 				},
 				onContextMenu: function onContextMenu(item, html, data, call) {
@@ -4926,7 +4920,7 @@ function(t) {
 				script.src = url;
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
-			include('https://www.googletagmanager.com/gtag/js?id=G-VCR95LEVXD');
+			//include('https://www.googletagmanager.com/gtag/js?id=G-VCR95LEVXD');
 			window.dataLayer = window.dataLayer || [];
 
 			function gtag() {
@@ -7911,7 +7905,7 @@ function(t) {
 					type: 'title'
 				},
 				field: {
-					name: '<div class="settings-folder" style="padding:0!important"><div style="width:3em;height:2.3em;margin-top:-.5em;padding-right:.5em"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8 5.5v7h2v-7h-2zm-.285 0H8.601l-1.497 4.113L5.607 8.5H3.493l2.611 6.964h2L10.715 8.5zm5.285 5h1.5a2.5 2.5 0 1 0 0-5H14v7h2v-2zm0-2v-1h1.5a.5.5 0 1 1 0 1H16z" fill="#ffffff" class="fill-000000"></path></svg></div><div style="font-size:1.3em">Осталось: <span style="color:#ffda00">24</span> дня</div></div>',
+					name: '<div class="settings-folder" style="padding:0!important"><div style="width:3em;height:2.3em;margin-top:-.5em;padding-right:.5em"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm8 5.5v7h2v-7h-2zm-.285 0H8.601l-1.497 4.113L5.607 8.5H3.493l2.611 6.964h2L10.715 8.5zm5.285 5h1.5a2.5 2.5 0 1 0 0-5H14v7h2v-2zm0-2v-1h1.5a.5.5 0 1 1 0 1H16z" fill="#ffffff" class="fill-000000"></path></svg></div><div style="font-size:1.3em">Осталось: <span style="color:#ffda00">900</span> дней</div></div>',
 					description: 'Для активации <b style="color: #ffd402;">Vip</b> статуса перейдите в телеграм бот <span style="color: #24b4f9;">@modssmy_bot</span><br>По вопросам <span style="color: #24b4f9;">@modss_group</span>'
 				}
 			});
@@ -9685,7 +9679,7 @@ function(t) {
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}
 		include('https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.js');
-		include('https://www.googletagmanager.com/gtag/js?id=G-8LVPC3VETR');
+		//include('https://www.googletagmanager.com/gtag/js?id=G-8LVPC3VETR');
 		window.dataLayer = window.dataLayer || [];
 
 		function gtag() {

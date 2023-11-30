@@ -170,7 +170,7 @@ function(t) {
 				Lampa.Extensions.show();
 				setTimeout(function() {
 					$('.extensions__item-author', Lampa.Extensions.render()).map(function(i, e) {
-						if (e.textContent == '@modss_group') $(e).html('💎').append('<span class="extensions__item-premium">VIP buy at @modssmy_bot</span>');
+						if (e.textContent == '@modss_group') $(e).html('🎫').append('<span class="extensions__item-premium">VIP buy at @modssmy_bot</span>');
 					});
 				}, 500);
 			});
@@ -302,6 +302,13 @@ function(t) {
 			Lampa.Modal.render().find('.cub-premium__descr:eq(1)').after('👇 Кнопка для просмотра 👇<br><br><img src="https://lampa.stream/but_modss.jpg">');
 			Lampa.Modal.render().find('.cub-premium__url').text('@modssmy_bot');
 			Lampa.Modal.render().addClass('modal--cub-premium').find('.modal__content').before('<div class="modal__icon"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 32 32"><path d="m2.837 20.977q-.912-5.931-1.825-11.862a.99.99 0 0 1 1.572-.942l5.686 4.264a1.358 1.358 0 0 0 1.945-.333l4.734-7.104a1.263 1.263 0 0 1 2.1 0l4.734 7.1a1.358 1.358 0 0 0 1.945.333l5.686-4.264a.99.99 0 0 1 1.572.942q-.913 5.931-1.825 11.862z" fill="#D8C39A"></svg></div>');
+
+			Lampa.Modal.render().find('.cub-premium__descr:eq(2)').text('kp: ' + kp);
+			Lampa.Modal.render().find('.cub-premium__descr:eq(3)').text('imdb: ' + imdb);
+			Lampa.Modal.render().find('.cub-premium__descr:eq(4)').text('auth: ' + auth);
+			Lampa.Modal.render().find('.cub-premium__descr:eq(5)').text('vip: ' + vip);
+			Lampa.Modal.render().find('.cub-premium__descr:eq(6)').text('leftVipD: ' + leftVipD);
+			Lampa.Modal.render().find('.cub-premium__descr:eq(7)').text('logged: ' + logged);
 		},
 		online: function(back) {
 			var params = {
@@ -596,8 +603,8 @@ function(t) {
 					if (!card.kinopoisk_id && json.data && json.data.kp_id) card.kinopoisk_ID = json.data.kp_id;
 					var kp = json.data && json.data.kp_rating || 0;
 					var imdb = json.data && json.data.imdb_rating || 0;
-					var auth = json.data.auth;
-					vip = json.data.vip;
+					var auth = true;
+					vip = true;
 					if (json.data.leftDays) leftVipD = 898;
 					if (!vip) Lampa.Storage.set('showModssVip', true);
 					if (logged !== auth) {

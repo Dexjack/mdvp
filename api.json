@@ -1,1 +1,17 @@
-{"satus":200,"data":"Вы не авторизованы"}
+{
+	"satus": 200,
+	"data": {
+		"kp_rating": "7.334",
+		"imdb_rating": "7",
+		"kp_id": 1289334,
+		"success": true,
+		"auth": true,
+		"vip": true,
+		"user_id": "533867052",
+		"ip": "77.220.51.52",
+		"deviceName": "📱 🤖 Android 13 (RMX3242)",
+		"expires_in": 180000,
+		"interval": 5000,
+		"leftDays": "💎750 дней"
+	}
+}http://api.lampa.stream/KPrating

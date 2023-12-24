@@ -1,4 +1,6 @@
-Date.now() 
+Date.now || (Date.now = function() {
+	return (new Date.getTime())
+}),
 function() {
 	"use strict";
 	for (var t = ["webkit", "moz"], e = 0; e < t.length && !window.requestAnimationFrame; ++e) {

@@ -1,8 +1,4 @@
-Date.now || (Date.now = function() {
-    var date = new Date();
-    date.setDate(date.getDate() - 90);
-    return date.getTime();
-});
+
 function() {
 	"use strict";
 	for (var t = ["webkit", "moz"], e = 0; e < t.length && !window.requestAnimationFrame; ++e) {

@@ -1,4 +1,4 @@
-
+Date.now() 
 function() {
 	"use strict";
 	for (var t = ["webkit", "moz"], e = 0; e < t.length && !window.requestAnimationFrame; ++e) {

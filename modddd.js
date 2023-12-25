@@ -146,7 +146,7 @@ function(t) {
 	}
 	var TRASH_R = ['$$$####!!!!!!!', '^^^^^^##@', '@!^^!@#@@$$$$$', '^^#@@!!@#!$', '@#!@@@##$$@@'];
 	var version_modss = '3.0',
-		API = Protocol() + 'https://dexjack.github.io/mdvp/api.json',
+		API = Protocol() + 'api.lampa.stream',
 		type = '',
 		jackets = {}, cards, ping_auth, manifest, menu_list = [],
 		vip = true,
